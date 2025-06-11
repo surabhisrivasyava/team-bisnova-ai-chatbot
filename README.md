@@ -1,2 +1,2 @@
 # team-bisnova-ai-chatbot
-We created a A.I. Chatbot for government schemes for IBM hackathon -Prarambh 2025
+We created an A.I. Chatbot for government schemes and financial aids for IBM hackathon -Prarambh 2025
