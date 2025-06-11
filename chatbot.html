@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GOVBOT – Government Schemes Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="chat-container">
+      <h1 class="title">🤖 GOVBOT</h1>
+      <p class="subtitle">Your assistant for Government Schemes like Ayushman Bharat, ABHA, Scholarships & more</p>
+
+      <div class="chat-box" id="chatBox"></div>
+
+      <div class="input-container">
+        <input type="text" id="userInput" placeholder="Ask something like 'What is Ayushman Bharat?'..." onkeypress="handleKeyPress(event)" />
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="startDictation()">🎙️</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up - GOVBOT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Create an Account</h1>
+    <form id="signupForm" onsubmit="return signup(event)">
+      <input type="text" id="signupName" placeholder="Full Name" required />
+      <input type="email" id="signupEmail" placeholder="Email" required />
+      <input type="password" id="signupPassword" placeholder="Password" required />
+      <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="index.html">Login</a></p>
+  </div>
+
+  <script>
+    function signup(e) {
+      e.preventDefault();
+      const name = document.getElementById('signupName').value.trim();
+      const email = document.getElementById('signupEmail').value.trim();
+      const pass = document.getElementById('signupPassword').value;
+      const confirmPass = document.getElementById('signupConfirmPassword').value;
+
+      if (!name || !email || !pass || !confirmPass) {
+        alert('Please fill all fields.');
+        return false;
+      }
+      if (pass !== confirmPass) {
+        alert('Passwords do not match!');
+        return false;
+      }
+      alert('Signup successful! Please login.');
+      window.location.href = 'index.html';
+      return false;
+    }
+  </script>
+</body>
+</html>
